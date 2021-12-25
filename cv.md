@@ -65,3 +65,18 @@ int main()
 }
 
 ```
+## Education
+
+I took courses in various programming languages, including basic concepts of C ++, 
+
+Python, JavaScript and HTML/CSS. 
+
+At the moment I am studying int the Uzhhorod National University.
+
+## English 
+
+I studied basic English at school and am currently studying professional English at
+
+ university. I can communicate freely on some topics and understand well the speech of 
+ 
+ a person who speaks English. At the university my level of English was rated as B2.
