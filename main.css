@@ -1,10 +1,20 @@
-.maintitle
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: black;
+    overflow-x: hidden;
+  }
+div header aside p input button a form span ul li {
+    box-sizing: border-box;
+  }
+h1 h2 h3 h4 h5 h6 {
+    margin: 0;
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+  }
+.wrapper
 {
-    font-style: arial;
-    
-}
-.paragraph
-{
-    font-style: arial;
-    border: dotted;
+    justify-content: center;
 }
