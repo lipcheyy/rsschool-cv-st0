@@ -9,27 +9,84 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="main-content"></div>
+        <!--MAIN-->
+        <main class="main-content">
+            <h2 class="h2-title">About Myself</h2>
+            
+            <p class="about-myself">My name is Vladislav, im 18 years old. I am a student of Uzhhorod National University. <br>
+                At the university I got acquainted with such programming languages as C++, C#,Java<br>
+                and Python. I consider it my goal to become a web developer, since at the moment <br>
+                this is one of the most demanded jobs in the world. In addition, I myself am very <br>
+                interested in web development.</p>
+                <hr>
+                <!--Example code-->
+            <h2 class="h2-title">Example code</h2>
+            <i>Below I have attached an example of the code of the tasks that I solved <br> during my studies.</i> <br>
+            <b><a href="https://www.eolymp.com/ru/problems/1532" target="_blank"> Handshake</b></a> <br>
+            <br>
+            <p>N businessmen gathered at the round table. Before the meeting, they should <br> shake hands <br>
+                 at the same time. No businessmen's hands should cross. <br>
+                 Calculate the number of ways they can shake hands.
+                <br> <br>
+                Input <br>
+
+                Each line contains one even natural number n (2 ≤ n ≤ 50). <br>
+                Output
+
+                For each value of n, print on a separate line the number <br>
+                 of ways n businessmen can shake hands. <br></p>
+                 <h3>Solution</h3>
+                 <pre >
+                 <code>
+                    #include< iostream >
+                    #include< vector >
+                    using namespace std;
+                    int main()
+                    {
+                        int n;
+                        while (cin>>n) 
+                        {
+                            vector < long long > v(n+1);
+                            v[0] = 1;
+                            v[1] = 1;
+                            for (int i = 2; i <= n; i++) 
+                            {
+                                for (int j = 0; j < i; j++) 
+                                {
+                                    v[i] += v[j] * v[i - j - 1];
+                                }
+                            }
+                            cout << v[n/2]<< endl;
+                            }
+                        
+                        }
+                 </code></pre>
+                 <hr>
+        </main>
+        <!--SIDEBAR-->
         <aside class="sidebar">
             <img class="mypic" src="profilepic.jfif" alt="Profile Picture">
             <h1>Vladyslav Lypchey</h1> 
+            <p>Student</p>
             <hr>
-            <h2>Contacts</h2>
+            <h2 class="h2-title">Contacts</h2>
             <p>Instagram: @into_the_lungsofhell</p>
             <p>Facebook: Vladyslav Lypchey</p>
             <p>E-mail: vladlipchey@gmail.com</p>
             <p>GitHub: @lipcheyy</p>
             <hr>
-            <h2>My skills</h2>
+            <h2 class="h2-title">My skills</h2>
             <ul class="my_skills">
                 <li><span class="none">C++ basics</span> </li>
                 <li><span class="none">Python basics</span></li>
                 <li><span class="none">HTML5/CSS3</span></li>
+                <li><span class="none">C#</span></li>
                 <li><span class="none">JavaScript</span></li>
                 <li><span class="none">Java/Android</span></li>
                 <li><span class="none">Unity</span></li>
             </ul>
             <hr>
+            <a href="https://rs.school/js/" target="_blank"><img class="rs-logo" src="rs_school_js.svg" alt="RS-SCHOOL LOGO"></a>
 
         </aside>
     </div>
