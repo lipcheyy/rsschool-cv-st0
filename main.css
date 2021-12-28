@@ -28,9 +28,18 @@ h1 h2 h3 h4 h5 h6 {
 .mypic
 {
     height: 425px;
-    width: 270px;
+    width: 250px;
 }
-hr
+h1,h3, .h2-title
+{
+    font-family: "Montserrat", sans-serif;
+}
+p,ul
+{
+    font-family: 'Poppins', sans-serif;
+    
+}
+.sidebar hr
 {
     padding-top: -10px;
     margin-bottom: 10px;
@@ -50,7 +59,7 @@ hr
 }
 .rs-logo
 {
-    margin-top: 90px;
+    margin-top: 380px;
 }
 .main-content
 {
@@ -69,4 +78,31 @@ hr
     margin-bottom: 35px;
     margin-left: 0px;
     width: 569px;
+}
+pre
+{
+    margin-left: -40px;
+}
+.nodec
+{
+    text-decoration: none;
+}
+.bold
+{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+}
+.gh{
+    width: 110px;
+    height: 110px;
+}
+footer
+{
+    display: flex;
+    justify-content: space-between;
+}
+.workyear
+{
+    font-family: "Montserrat", sans-serif;
+    font-size: 3em;
 }
