@@ -46,7 +46,7 @@ p,ul
 }
 .my_skills
 {
-    color: #dbb776;
+    color: #f74040;
    
 }
 .none
@@ -59,7 +59,7 @@ p,ul
 }
 .rs-logo
 {
-    margin-top: 380px;
+    margin-top: 390px;
 }
 .main-content
 {
@@ -74,7 +74,7 @@ p,ul
 }
 .main-content hr
 {
-    margin-top:33px;
+    margin-top:27px;
     margin-bottom: 35px;
     margin-left: 0px;
     width: 569px;
@@ -86,6 +86,7 @@ pre
 .nodec
 {
     text-decoration: none;
+    color: black;
 }
 .bold
 {
@@ -98,6 +99,7 @@ pre
 }
 footer
 {
+    
     display: flex;
     justify-content: space-between;
 }
