@@ -4,13 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="main.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>lipcheyy cv</title>
 </head>
 <body>
-    <h1 class="maintitle">Hello, Rs-school mentors!</h1>
-    <p class="paragraph">This is my first coding when i using GIT, <br>
-    <b>thank you very much for your service!</b> </p>
+    <div class="wrapper">
+        <!--MAIN-->
+        <main class="main-content">
+            <h2 class="h2-title">About Myself</h2>
+            
+            <p class="about-myself">My name is Vladislav, im 18 years old. I am a student of <br> Uzhhorod National University. 
+                At the university I got acquainted <br>with such programming languages as C++, C#,Java<br>
+                and Python. I consider it my goal to become a web developer, <br>since at the moment 
+                this is one of the most demanded jobs in the world.<br> In addition, I myself am very 
+                interested in web development.</p>
+                <hr>
+                <!--Example code-->
+            <h2 class="h2-title">Example code</h2>
+            <span class="bold"><a href="https://www.eolymp.com/ru/problems/1532" target="_blank" class="nodec"> Handshake</a></span> <br>
+            <br>
+            <p> <b>N</b> businessmen gathered at the round table. Before the meeting, they should <br> shake hands <br>
+                 at the same time. No businessmen's hands should cross. <br>
+                 Calculate the number of ways they can shake hands.
+                <br> 
+               <span class="bold">Input</span> <br>
+
+                Each line contains one even natural number n (2 ≤ n ≤ 50). <br>
+               <span class="bold"> Output</span> <br> 
+
+                    For each value of <span class="bold">n</span>, print on a separate line the number <br>
+                 of ways n businessmen can shake hands. <br></p>
+                 <h3>Solution</h3>
+                 <pre >
+                 <code>
+                    #include< iostream >
+                    #include< vector >
+                    using namespace std;
+                    int main()
+                    {
+                        int n;
+                        while (cin>>n) 
+                        {
+                            vector < long long > v(n+1);
+                            v[0] = 1;
+                            v[1] = 1;
+                            for (int i = 2; i <= n; i++) 
+                            {
+                                for (int j = 0; j < i; j++) 
+                                {
+                                    v[i] += v[j] * v[i - j - 1];
+                                }
+                            }
+                            cout << v[n/2]<< endl;
+                            }
+                        
+                        }
+                 </code></pre>
+                 <hr>
+            <!--EDUCATION-->
+            <h2 class="h2-title">Education</h2>
+            <p class="education">I took courses in various programming languages, including C ++,<br>
+                Python, JavaScript and HTML/CSS basics. <br>
+                At the moment I am studying int the Uzhhorod National University.</p>
+                <hr>
+               <!--ENGLISH--> 
+               <h2 class="h2-title">English</h2>
+               <p class="english">
+                I studied basic English at school and am currently studying  <br> professional English at
+                 university. I can communicate freely on <br> some topics and understand well the speech of 
+                a person who <br> English. At the university my level of English was rated as B2.</p>
+                <hr> 
+               
+               <footer><a href="https://github.com/lipcheyy" target="_blank"><img class="gh" src="img/25231.png" alt="GitHub account" ></a>
+            <h2 class="workyear">2021</h2></footer>
+               
+        </main>
+        <!--SIDEBAR-->
+        <aside class="sidebar">
+            <img class="mypic" src="img/profilepic.jfif" alt="Profile Picture">
+            <h1>Vladyslav Lypchey</h1> 
+            <p>Student</p>
+            <hr>
+            <h2 class="h2-title">Contacts</h2>
+            <p >Instagram: <a  class="nodec" href="https://www.instagram.com/into_the_lungsofhell/" target="_blank">@into_the_lungsofhell</a></p>
+            <p>Facebook: Vladyslav Lypchey</p>
+            <p>E-mail: vladlipchey@gmail.com</p>
+            <p >GitHub: <a class="nodec" href="https://github.com/lipcheyy" target="_blank">@lipcheyy</a>  </p>
+            <hr>
+            <h2 class="h2-title">My skills</h2>
+            <ul class="my_skills">
+                <li><span class="none">C++ basics</span> </li>
+                <li><span class="none">Python basics</span></li>
+                <li><span class="none">HTML5/CSS3</span></li>
+                <li><span class="none">C#</span></li>
+                <li><span class="none">JavaScript</span></li>
+                <li><span class="none">Java/Android</span></li>
+                <li><span class="none">Unity</span></li>
+            </ul>
+            <hr>
+            <a href="https://rs.school/js/" target="_blank"><img class="rs-logo" src="img/rs_school_js.svg" alt="RS-SCHOOL LOGO"></a>
+
+        </aside>
+    </div>
 
 </body>
 </html>
