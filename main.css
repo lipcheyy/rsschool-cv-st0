@@ -33,4 +33,22 @@ h1 h2 h3 h4 h5 h6 {
 hr
 {
     padding-top: -10px;
+    margin-bottom: 10px;
+}
+.my_skills
+{
+    color: #dbb776;
+   
+}
+.none
+{
+    color: black;
+}
+.my_skills li
+{
+    line-height: 34px;
+}
+.main
+{
+    padding: 15px;
 }
