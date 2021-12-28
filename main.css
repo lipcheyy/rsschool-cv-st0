@@ -59,13 +59,13 @@ hr
     padding-right: 40px;
     background-color: #e3f8fc;
 }
-.about-myself
+.about-myself, .education, .english
 {
     line-height: 20px;
 }
 .main-content hr
 {
-    margin-top:35px;
+    margin-top:33px;
     margin-bottom: 35px;
     margin-left: 0px;
     width: 569px;
